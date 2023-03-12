@@ -4,13 +4,13 @@ using namespace std;
 
 #include <clocale>
 #include <cmath>
+{
 
 int main()
-{
 	setlocale(LC_ALL, "bulgarian");
 	int columns;
 	int counter;
-	std::cout << "Ìîëÿ, âúâåäåòå ïîëîæèòåëî ÷èñëî:" << endl;
+	std::cout << "ÃŒÃ®Ã«Ã¿, Ã¢ÃºÃ¢Ã¥Ã¤Ã¥Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¨Ã²Ã¥Ã«Ã® Ã·Ã¨Ã±Ã«Ã®:" << endl;
 	cin >> columns;
 	int n = 0;
 
@@ -56,7 +56,7 @@ int main()
 	}
 	else
 	{
-		std::cout << "Âúâåäîõòå íåâàëèäíî ÷èñëî" << endl;
+		std::cout << "Ã‚ÃºÃ¢Ã¥Ã¤Ã®ÃµÃ²Ã¥ Ã­Ã¥Ã¢Ã Ã«Ã¨Ã¤Ã­Ã® Ã·Ã¨Ã±Ã«Ã®" << endl;
 	}
 
 	return 0;
