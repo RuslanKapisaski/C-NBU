@@ -20,7 +20,7 @@ double Prod(double  n, int p, double (*f)(double), int (*limit)(int),bool state)
             }
 
         }
-        cout << res;
+        cout <<"Result is: "<<res;
         return res;
     
     
