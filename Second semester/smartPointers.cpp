@@ -44,6 +44,7 @@ void weakPointers() {
 };
 int main()
 {
-
+	uniquePointers
+        sharedPointers()
 	weakPointers();
 }
