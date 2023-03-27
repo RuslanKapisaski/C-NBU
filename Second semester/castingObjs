@@ -1,0 +1,34 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::string;
+class Parent {
+public:
+    void sleep() { cout << "Good night" << endl; }
+};
+
+class Child : public Parent {
+public:
+    void gotoSchool() { cout << "Wish you luck" << endl; }
+  
+};
+
+int main()
+{
+    Parent parent;
+    Child child;
+    // upcast - implicit type cast allowed
+    Parent* pParent = &child;
+ 
+    // downcast - explicit type case required 
+    Child* pChild = (Child*)&parent;
+
+    pParent->sleep();
+ 
+    pChild->gotoSchool();
+
+    //After casting
+    
+
+    return 0;
+}
