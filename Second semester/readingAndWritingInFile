@@ -1,0 +1,40 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	
+	string messsage = "Hello, World!";
+	fstream myFile;
+	char command;
+	cin.get(command);
+
+	myFile.open("myFirstFile.txt",ios::out||ios::in);
+	if (command == 'w')
+	{
+		if (myFile.is_open())
+		{
+			myFile << messsage;
+		}
+			myFile.close();
+	}
+	else if (command =='r')
+	{
+		if (myFile.is_open())
+		{
+			cout << "Content of your file: ";
+			string line;
+			while (getline(myFile,line))
+			{
+				cout << line;
+			}
+		}
+		myFile.close();
+	}
+
+
+	return 0;
+}
